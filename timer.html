@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+
+    <a href="index.html" class="card back-card">
+        ← Назад
+    </a>
+
+    <h1>Таймер зворотного відліку</h1>
+
+    <div class="timer-container">
+
+        <input type="text" id="datetime-picker">
+
+        <button id="start-btn" disabled>
+            Start
+        </button>
+        <button id="stop-btn">
+            Stop
+        </button>
+
+        <span id="days">00</span>
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">00</span>
+
+        <div class="timer">
+            <div class="field">
+                <span class="value" data-days>00</span>
+                <span class="label">Дні</span>
+            </div>
+
+            <div class="field">
+                <span class="value" data-hours>00</span>
+                <span class="label">Години</span>
+            </div>
+
+            <div class="field">
+                <span class="value" data-minutes>00</span>
+                <span class="label">Хвилини</span>
+            </div>
+
+            <div class="field">
+                <span class="value" data-seconds>00</span>
+                <span class="label">Секунди</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="js/timer.js"></script>
+
+</body>
+</html>
