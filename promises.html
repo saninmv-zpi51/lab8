@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проміси</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="index.html" class="card back-card">
+    ← Назад
+  </a>
+
+  <h1>Генератор промісів</h1>
+
+  <form class="promise-form">
+
+    <label>
+      Початкова затримка (мс)
+      <input type="number" name="delay" value="1000">
+    </label>
+
+    <label>
+      Крок затримки (мс)
+      <input type="number" name="step" value="500">
+    </label>
+
+    <label>
+      Кількість промісів
+      <input type="number" name="amount" value="5">
+    </label>
+
+    <button type="submit">
+      Створити проміси
+    </button>
+
+  </form>
+
+  <div id="results"></div>
+
+  <script src="js/promises.js"></script>
+
+</body>
+</html>

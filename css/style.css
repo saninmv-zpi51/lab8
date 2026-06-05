@@ -201,3 +201,164 @@ h1{
         inset 0 2px 8px rgba(255,255,255,0.5),
         inset 0 -3px 8px rgba(0,0,0,0.12);
 }
+.back-card{
+    display:inline-block;
+    width:auto;
+    padding:15px 30px;
+    font-size:22px;
+    margin-bottom:30px;
+}
+.feedback-form{
+    max-width:500px;
+    margin:40px auto;
+    padding:35px;
+
+    background:#89e7ebcc;
+    border:2px solid #538bb9;
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.15),
+        inset 0 2px 8px rgba(255,255,255,0.4),
+        inset 0 -3px 8px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.feedback-form label{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
+    color:#24364a;
+    font-weight:bold;
+}
+
+.feedback-form input,
+.feedback-form textarea{
+    padding:14px;
+
+    border-radius:12px;
+    border:2px solid #538bb9;
+
+    font-family:inherit;
+    font-size:16px;
+}
+
+.feedback-form button{
+    padding:14px;
+
+    border:none;
+    border-radius:15px;
+
+    background:#538bb9;
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.feedback-form button:hover{
+    background:#416f96;
+}
+.promise-form{
+
+    max-width:500px;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    background:#89e7ebcc;
+
+    border:2px solid #538bb9;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.15),
+        inset 0 2px 8px rgba(255,255,255,0.4),
+        inset 0 -3px 8px rgba(0,0,0,0.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.promise-form label{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    font-weight:bold;
+
+    color:#24364a;
+}
+
+.promise-form input{
+
+    padding:12px;
+
+    border-radius:12px;
+
+    border:2px solid #538bb9;
+}
+
+.promise-form button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#538bb9;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+#results{
+
+    max-width:700px;
+
+    margin:40px auto;
+}
+
+.success,
+.error{
+
+    margin-bottom:10px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    font-weight:bold;
+}
+
+.success{
+
+    background:#d8ffd8;
+
+    border:2px solid #60b860;
+}
+
+.error{
+
+    background:#ffd8d8;
+
+    border:2px solid #d45c5c;
+}
