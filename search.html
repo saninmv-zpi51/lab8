@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пошук зображень</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css">
+</head>
+<body>
+
+  <a href="index.html" class="card back-card">← Назад</a>
+
+  <h1>Пошук зображень</h1>
+
+  <form class="search-form">
+    <input
+      type="text"
+      name="searchQuery"
+      placeholder="Введіть запит"
+      autocomplete="off"
+    >
+
+    <button type="submit">Search</button>
+  </form>
+
+  <p class="loader is-hidden">Loading images, please wait...</p>
+
+  <div class="search-gallery"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
