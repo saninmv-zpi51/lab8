@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Календар подій</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+
+    <a href="index.html" class="card back-card">← Назад</a>
+
+  <main class="calendar-page">
+    <h1>Календар подій</h1>
+
+    <section class="calendar-card">
+      <input type="text" id="datetime-picker" placeholder="Оберіть дату та час">
+
+      <p id="selectedDate">Дата не вибрана</p>
+      <p id="eventInfo">Оберіть дату, щоб побачити подію.</p>
+    </section>
+
+    <section class="events-section">
+      <h2>Таблиця подій</h2>
+
+      <table class="events-table">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Час</th>
+            <th>Подія</th>
+            <th>Місце</th>
+          </tr>
+        </thead>
+        <tbody id="eventsTableBody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/calendar.js"></script>
+</body>
+</html>

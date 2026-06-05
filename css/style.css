@@ -62,18 +62,142 @@ h1{
 
     transition:0.3s;
 
-    /* зовнішня тінь */
-    box-shadow:
-        0 10px 20px rgba(0,0,0,0.15),
-
-        /* внутрішня тінь */
-        inset 0 2px 8px rgba(255,255,255,0.4),
-
-        inset 0 -3px 8px rgba(0,0,0,0.08);
 }
 
 .card:hover{
     transform:translateY(-5px);
 
     box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.calendar-wrapper{
+
+    max-width:500px;
+
+    margin:50px auto;
+
+    text-align:center;
+}
+
+#datetime-picker{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:20px;
+
+    border-radius:15px;
+
+    border:2px solid #538bb9;
+
+    background:white;
+}
+
+#selectedDate{
+
+    margin-top:30px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#24364a;
+}
+
+.events-section{
+    max-width:1000px;
+    margin:40px auto;
+    padding:30px;
+
+    background:#89e7ebcc;
+    border:2px solid #538bb9;
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.15),
+        inset 0 2px 8px rgba(255,255,255,0.4),
+        inset 0 -3px 8px rgba(0,0,0,0.08);
+}
+
+.events-section h2{
+    text-align:center;
+    color:#24364a;
+}
+
+.events-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+
+.events-table th,
+.events-table td{
+    border:1px solid #b7d7f0;
+    padding:14px;
+    text-align:left;
+}
+
+.events-table th{
+    background:#538bb9;
+    color:white;
+    font-size:18px;
+}
+
+.events-table tr:nth-child(even){
+    background:#f4fbff;
+}
+
+.events-table tr:hover{
+    background:#dff4ff;
+}
+
+#eventInfo{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+    color:#24364a;
+}
+
+.flatpickr-calendar{
+    z-index:9999 !important;
+}
+.back-button{
+    display:inline-block;
+
+    padding:15px 30px;
+
+    background:#89e7ebcc;
+
+    border:2px solid #538bb9;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+    color:#24364a;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.15),
+        inset 0 2px 8px rgba(255,255,255,0.4),
+        inset 0 -3px 8px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.back-button:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.2),
+        inset 0 2px 8px rgba(255,255,255,0.5),
+        inset 0 -3px 8px rgba(0,0,0,0.12);
 }
